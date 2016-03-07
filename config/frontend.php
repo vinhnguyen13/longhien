@@ -13,7 +13,7 @@ Yii::setPathOfAlias('themes', $themes);
 
 return array(
 	'basePath'=> $frontend,
-	'name'=>'PB Flower Shop',
+	'name'=>'Long Hien',
 	'id' => 'like.vn',
 	'theme' => 'tennis',
 	'runtimePath' => $frontend . DIRECTORY_SEPARATOR . 'runtime',
