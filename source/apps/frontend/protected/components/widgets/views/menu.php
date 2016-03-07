@@ -1,4 +1,5 @@
 <?php
+$sections = (object)Yii::app()->params->sections;
 $request = Yii::app()->request;
 $baseUrl = Yii::app()->urlManager->parseUrl($request);
 $sec = $request->getParam('sec');
@@ -17,9 +18,9 @@ $sec = $request->getParam('sec');
             <?php endif;?>
         </li>
         <li><a href="<?php echo Yii::app()->createUrl('content/introduction', array())?>" <?=($baseUrl=='content/introduction') ? 'class="current"' : '';?>>Thương hiệu</a></li>
-        <li><a href="<?php echo Yii::app()->createUrl('content/index', array('sec'=>2))?>" <?=($baseUrl=='content/index' && (!empty($sec) && $sec==2)) ? 'class="current"' : '';?>>Dịch vụ</a></li>
-        <li><a href="<?php echo Yii::app()->createUrl('content/index', array('sec'=>5))?>" <?=($baseUrl=='content/index' && (!empty($sec) && $sec==5)) ? 'class="current"' : '';?>>Đối tác</a></li>
-        <li><a href="<?php echo Yii::app()->createUrl('content/index', array('sec'=>6))?>" <?=($baseUrl=='content/index' && (!empty($sec) && $sec==6)) ? 'class="current"' : '';?>>Giảm giá - Khuyến mãi</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl('content/index', array('sec'=>$sections->dichvu))?>" <?=($baseUrl=='content/index' && (!empty($sec) && $sec==2)) ? 'class="current"' : '';?>>Dịch vụ</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl('content/index', array('sec'=>$sections->doitac))?>" <?=($baseUrl=='content/index' && (!empty($sec) && $sec==5)) ? 'class="current"' : '';?>>Đối tác</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl('content/index', array('sec'=>$sections->giamgia_khuyenmai))?>" <?=($baseUrl=='content/index' && (!empty($sec) && $sec==6)) ? 'class="current"' : '';?>>Giảm giá - Khuyến mãi</a></li>
         <li><a href="<?php echo Yii::app()->createUrl('site/contact', array())?>" <?=($baseUrl=='site/contact') ? 'class="current"' : '';?>>Liên hệ</a></li>
     </ul>
     <!-- End #menu -->

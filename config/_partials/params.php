@@ -38,11 +38,11 @@ return array(
 	),
 	'sections'=>array(
 		'home'=>1,
-		'introduction'=>2,
-		'products'=>3,
-		'services'=>4,
-		'news'=>5,
-		'pay'=>6,
+		'sanpham'=>2,
+		'thuonghieu'=>3,
+		'dichvu'=>4,
+		'doitac'=>5,
+		'giamgia_khuyenmai'=>6,
 		'contact'=>7,
 	)
 	

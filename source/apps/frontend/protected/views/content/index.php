@@ -1,5 +1,8 @@
+<?php
+$title = !empty($section) ? $section->title : '';
+?>
 <div class="block-news">
-    <h2>Dịch vụ</h2>
+    <h2><?=$title;?></h2>
     <?php
     if (!empty($content)):
         foreach ($content as $item) {

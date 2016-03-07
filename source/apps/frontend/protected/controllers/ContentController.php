@@ -18,9 +18,12 @@ class ContentController extends Controller
         $pages->applyLimit($criteria);
 
         $content = Content::model()->findAll($criteria);
+
+		$section = Sections::model()->find($sectionid);
         $this->render('index', array(
             'content'=>$content,
-            'pages' => $pages
+            'pages' => $pages,
+            'section' => $section,
         ));
 	}
 	
