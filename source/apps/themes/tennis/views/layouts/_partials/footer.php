@@ -9,7 +9,7 @@
       <div class="clearb"></div>
       <div class="footeraddress">
         <p>91 Thành Thái, Phường 14, Quận 10, TP Hồ Chí Minh</p>
-        <p>Điện thoại: 08 38 651057 - 090.3922.600</p>
+        <p>Điện thoại: 090.0000.999</p>
         <p>Email: hoatuoipb@gmail.com</p>
       </div>
       <div class="clearb"></div>
