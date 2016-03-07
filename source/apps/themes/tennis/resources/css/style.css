@@ -175,7 +175,7 @@ color: #ffb000;}
 
  /* Slideshow #slidetop*/
 #slidetop { width:580px; height:305px; float:left; position:relative;  }
-#slidetop .bg-slide { background:transparent url(../images/bg-slide.png) no-repeat top; width:580px; height:29px; position:absolute; z-index:100; bottom:0;  }
+#slidetop .bg-slide { background:transparent url(../images/bg-slide.png) no-repeat top; width:780px; height:29px; position:absolute; z-index:100; bottom:0;  }
 .slides_container {	width:580px; overflow:hidden; position:relative; display:none; }
 .slides_container div.slide { width:580px;	height:305px;	display:block;}
 /*	Pagination */
