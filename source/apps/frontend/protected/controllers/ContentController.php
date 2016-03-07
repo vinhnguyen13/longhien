@@ -19,7 +19,7 @@ class ContentController extends Controller
 
         $content = Content::model()->findAll($criteria);
 
-		$section = Sections::model()->find($sectionid);
+		$section = Sections::model()->findByPk($sectionid);
         $this->render('index', array(
             'content'=>$content,
             'pages' => $pages,
