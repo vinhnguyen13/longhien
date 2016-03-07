@@ -23,7 +23,7 @@
       <div id="center-left"> 
         
         <!-- #slidetop -->
-<!--        --><?php //$this->widget('frontend.components.widgets.SlideWidget', array()); ?>
+        <?php $this->widget('frontend.components.widgets.SlideWidget', array()); ?>
         <!--End  .slidetop -->
         <div class="clearb"></div>
       </div>
