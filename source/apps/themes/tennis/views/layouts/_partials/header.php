@@ -9,7 +9,7 @@ if(!empty($cart)){
 }
 ?>
 <div id="header">
-    <div id="logo"><a href="<?php echo Yii::app()->createUrl('site/index');?>"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/resources/images/logo.png" alt="TENNIS XUXU"/></a></div>
+    <div id="logo"><a href="<?php echo Yii::app()->createUrl('site/index');?>"><img height="75" src="<?php echo Yii::app()->theme->baseUrl; ?>/resources/images/logo.png" alt="TENNIS XUXU"/></a></div>
     
     <!-- #search -->
     <div id="search">
