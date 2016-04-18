@@ -79,8 +79,9 @@ strong, .bold, .gras { font-weight:700; }
 body { background:#d4e0e7 url(../images/bg-page.jpg) repeat center center fixed; }
 
 #page { margin:0 auto; width:1000px;  }
-#header { height:111px; width:1000px; margin:0 auto; } 
-#logo { margin-left:8px; float:left; width:260px; height:63px; margin-top:23px;}
+#header { height:111px; width:1000px; margin:0 auto; background-color: white;margin-top: 5px;}
+#logo { margin-left:8px; float:left; width:260px; height:63px; margin-top:0px;}
+#logo img { max-height: 110px;}
 /*	#search  */
 #search {  float:left; width:421px; height:40px; margin-left:124px; margin-top:36px; }
 #search .bgsearch { background:transparent url(../images/bg-search.png) no-repeat top; border:none; float:left; width:326px; height:34px; margin-top:3px;} 
