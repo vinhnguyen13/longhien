@@ -3,8 +3,11 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title><?php echo CHtml::encode($this->pageTitle); ?></title>
-<meta name="Description" content="Description" lang="fr" xml:lang="fr" />
-<meta name="Keywords" content="Keywords"/>
+<meta name="Description" content="Long Hiển - <?=!empty($this->metas['description']) ? CHtml::encode($this->metas['description']) : CHtml::encode($this->pageTitle);?>"/>
+<meta name="Keywords" content="Máy may Jack, may may jack, LongHien, longhien,  <?=!empty($this->metas['keywords']) ? CHtml::encode($this->metas['keywords']) : CHtml::encode($this->pageTitle);?>"/>
+<meta name="robots" content="index, follow" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="referrer" content="default"/>
 <link href="<?php echo Yii::app()->theme->baseUrl; ?>/resources/css/style.css" rel="stylesheet" type="text/css" media="all" />
 <link href="<?php echo Yii::app()->theme->baseUrl; ?>/resources/css/libs.css" rel="stylesheet" type="text/css" media="all" />
 <link href=http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/ui-lightness/jquery-ui.css rel="stylesheet" type="text/css" media="all" />

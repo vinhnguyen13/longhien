@@ -14,7 +14,7 @@ Yii::setPathOfAlias('themes', $themes);
 return array(
 	'basePath'=> $frontend,
 	'name'=>'Long Hien',
-	'id' => 'like.vn',
+	'id' => 'longhien.com',
 	'theme' => 'tennis',
 	'runtimePath' => $frontend . DIRECTORY_SEPARATOR . 'runtime',
 	'modulePath' => $backend.'/modules',
