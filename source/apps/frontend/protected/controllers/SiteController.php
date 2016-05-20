@@ -47,6 +47,7 @@ class SiteController extends Controller
 		if(!empty($catid)){
 			$criteria->addCondition("catid='$catid'");
 		}
+		$criteria->order = 'modified DESC';
 		/** Pagination **/
 		$count = Products::model()->count($criteria);
         $pages=new CPagination($count);
