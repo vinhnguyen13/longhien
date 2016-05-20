@@ -11,7 +11,7 @@ class ProductsController extends Controller
 		$products = new Products();
 		$criteria = new CDbCriteria();
 		$criteria->addCondition("published=1");
-		$criteria->order = "ordering ASC";
+		$criteria->order = 'modified DESC';
 		if(!empty($catid)){
 			$criteria->addCondition("catid='$catid'");
 		}
