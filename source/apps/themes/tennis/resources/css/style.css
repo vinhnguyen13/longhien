@@ -346,9 +346,9 @@ color: #ffb000;}
 .map-contact .maps-iframe { border:3px solid #e0e0e0; }
 
 .block-content-large .product-detail { width:719px; height:282px; margin:0 auto;}
-.block-content-large .product-detail .price { padding-bottom: 10px;  }
 .block-content-large .product-detail .imgproduct { float:left; margin-right:10px; width:356px; height:278px;  }
 .block-content-large .product-detail .imgproduct .imgpro{ width:350px; height:272px; background-color:#FFF; padding:3px; border:1px solid #e5e5e5; margin-bottom:10px;}
+.block-content-large .product-detail .product-content div:first-child { padding-bottom: 10px;  }
 .block-content-large .product-detail .product-content { width:353px; float:right;  }
 .block-content-large .product-detail .product-content h1 { color:#003e7b; font-size:16px; margin-bottom:25px;}
 .block-content-large .product-detail .product-content .input1 { width:90%; clear:both; margin-bottom:8px; padding-left:10px;} 
