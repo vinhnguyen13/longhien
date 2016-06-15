@@ -8,9 +8,10 @@
       </div>
       <div class="clearb"></div>
       <div class="footeraddress">
-        <p>91 Thành Thái, Phường 14, Quận 10, TP Hồ Chí Minh</p>
-        <p>Điện thoại: 090.0000.999</p>
-        <p>Email: hoatuoipb@gmail.com</p>
+        <p>54 Xuân Diệu, Phường 4, Quận Tân Bình, TP Hồ Chí Minh</p>
+        <p>Điện thoại: 08.38113358</p>
+        <p>Fax: 08.38119584</p>
+        <p>Email: long_hien@yahoo.com.vn</p>
       </div>
       <div class="clearb"></div>
     </div>
