@@ -61,7 +61,7 @@ class VModel {
 		}
 		
 		list($width, $height, $type, $attr)=getimagesize($fil->tempName);
-		$file_name = date ( 'd-m-Y-CV-h-i-s-A', time () ).uniqid();
+		$file_name = /*date ( 'd-m-Y-CV-h-i-s-A', time () ).uniqid()*/Util::getSlug($fil->name);
 		$new_filename = $file_name.'.'.strtolower($fil->extensionName);
 		if ($fil->saveAs($filePath.$new_filename)) {
 			$suFile = array(
