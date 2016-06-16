@@ -111,6 +111,11 @@ class ProductsController extends Controller
 // 				$_POST['Products']['params'] = array_merge(json_decode($model->params, true), $_POST['Products']['params']);				
 			}
 			$model->attributes=$_POST['Products'];
+			/*if(!empty($_POST['Products']['params']['file']['name'])){
+				$model->title = pathinfo($_POST['Products']['params']['file']['name'], PATHINFO_FILENAME);
+			}
+			if($model->save())
+				$this->redirect(array('products/update/id/'.($model->id + 1)));*/
 			if($model->save())
 				$this->redirect(array('admin'));
 		}
