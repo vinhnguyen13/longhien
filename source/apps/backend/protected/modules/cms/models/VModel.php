@@ -62,8 +62,10 @@ class VModel {
 		
 		list($width, $height, $type, $attr)=getimagesize($fil->tempName);
 		$file_name = /*date ( 'd-m-Y-CV-h-i-s-A', time () ).uniqid()*/Util::getSlug($fil->name);
+		$image = Yii::app()->image->load($fil->tempName);
+		$image->resize(1024, 1024)->quality(75)->sharpen(20);
 		$new_filename = $file_name;
-		if ($fil->saveAs($filePath.$new_filename)) {
+		if ($image->save($filePath.$new_filename)) {
 			$suFile = array(
 				'images'=>str_replace(Yii::getPathOfAlias('pathroot'), '', $filePath.$new_filename),
 				'params'=>array(
