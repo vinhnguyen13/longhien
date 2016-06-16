@@ -4,7 +4,7 @@ $title = !empty($section) ? $section->title : '';
 <div class="block-news">
     <h2><?=$title;?></h2>
     <?php
-    if (!empty($content)):
+    if (!empty($content) && count($content) > 1):
         foreach ($content as $item) {
             $src = $item->images;
             ?>
@@ -18,6 +18,12 @@ $title = !empty($section) ? $section->title : '';
             </div>
         <?php
         }
+    elseif(!empty($content) && count($content) == 1):
+    ?>
+        <div class="content-detail">
+            <?php echo $content[0]->fulltext;?>
+        </div>
+    <?php
     endif;
     ?>
     <div class="clearb"></div>

@@ -38,8 +38,8 @@ return array(
 	),
 	'sections'=>array(
 		'home'=>1,
-		'products'=>2,
-		'thuonghieu'=>3,
+		'products'=>3,
+		'thuonghieu'=>2,
 		'dichvu'=>4,
 		'doitac'=>5,
 		'giamgia_khuyenmai'=>6,
