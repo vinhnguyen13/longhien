@@ -76,7 +76,7 @@ strong, .bold, .gras { font-weight:700; }
 
 /*	Structure page.
 ----------------------------------------------------------*/
-body { background:#d4e0e7 url(../images/bg-page.jpg) repeat center center fixed; }
+body { background:#1a303a; }
 
 #page { margin:0 auto; width:1000px;  }
 #header { height:111px; width:1000px; margin:0 auto; background-color: white;margin-top: 5px;}
@@ -118,10 +118,10 @@ box-shadow: 0 0 5px #4d4d4d; }
 .datetime { float:right; margin-right:20px; font-size:14px; font-weight:bold; color:#FFF; margin-top:7px;}
 
 /*	#contenu */
-#contenu { text-align:left; width:980px; background-color:#FFF; padding-left:10px; padding-right:10px; padding-top:10px;  }
+#contenu {text-align:left;width: 990px;background-color:#FFF;/* padding-left:10px; */padding-right:10px;padding-top:10px;}
 
 /*	#footer */
-#footer { text-align:left; width:787px; clear:both; background: #1a303a url(../images/bg-footer.jpg) no-repeat top; height:120px; padding-left:193px; color:#FFF;   }
+#footer {text-align:left;width: 807px;clear:both;background: #1a303a url(../images/bg-footer.jpg) no-repeat top;height:120px;padding-left: 193px;color:#FFF;}
 #footer a { color:#FFF; font-weight:bold;}
 #footer a:hover { color:#fdd14b; }
 #footer .linkfooter { color:#FFF; font-weight:bold; text-transform:uppercase; height:31px; padding-top:10px; margin-bottom:7px; } 
