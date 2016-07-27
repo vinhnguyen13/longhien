@@ -175,7 +175,7 @@ color: #ffb000;}
 #center-left { float:left; /* width:580px; */  }
 
  /* Slideshow #slidetop*/
-#slidetop { width:780px; height:305px; float:left; position:relative;  }
+#slidetop { width:780px; height:305px; float:left; position:relative; z-index: 5;  }
 #slidetop .bg-slide { background:transparent url(../images/bg-slide.png) no-repeat top; width:780px; height:29px; position:absolute; z-index:100; bottom:0;  }
 .slides_container {	width:780px; overflow:hidden; position:relative; display:none; }
 .slides_container div.slide { width:780px;	height:305px;	display:block;}

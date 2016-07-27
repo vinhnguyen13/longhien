@@ -6,3 +6,6 @@
 .idea/workspace.xml
 source/apps/frontend/protected/runtime/
 source/apps/frontend/protected/assets/
+source/apps/backend/protected/runtime/
+source/apps/backend/protected/assets/
+admin/assets/

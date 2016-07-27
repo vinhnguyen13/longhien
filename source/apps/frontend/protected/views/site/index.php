@@ -84,9 +84,11 @@ $advs = Advertising::model()->findAllByAttributes(array('position'=>'event'), ar
 		  			$src = $item->images;
 		  		}
 		  		$price = 0;
-		  		if(!empty($item->price_new)){
-		  			$price = number_format((int)$item->price_new);
-		  		}
+				if (!empty($product->price_new)) {
+					$price_new = number_format($product->price_new).' VND';
+				}else{
+					$price_new = 'Liên hệ';
+				}
 		  		$url = Yii::app()->createUrl('products/view', array('id'=>$item->id, 'slug'=>$item->slug));
 		  ?>
 	    <div class="items">
@@ -99,7 +101,7 @@ $advs = Advertising::model()->findAllByAttributes(array('position'=>'event'), ar
 	    <a href="<?php echo $url;?>" class="bgImg"><img src="<?php echo $src;?>" alt="" width="153" height="153" /></a><br />
 	      <strong class="blue"><a href="<?php echo $url;?>"><?php echo $item->title;?></a></strong><br />
 	      <br />
-	      <strong>Giá:</strong> <strong class="red"><?php echo $price;?> VNĐ</strong> </div>
+	      <strong>Giá:</strong> <strong class="red"><?php echo $price_new;?></strong> </div>
 	    <?php 
 		  	}		  	
 		  ?>

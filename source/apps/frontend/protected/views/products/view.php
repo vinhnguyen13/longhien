@@ -11,7 +11,9 @@ if (!empty($product->price)) {
 }
 $price_new = 0;
 if (!empty($product->price_new)) {
-    $price_new = number_format($product->price_new);
+    $price_new = number_format($product->price_new).' VND';
+}else{
+    $price_new = 'Liên hệ';
 }
 $clsAmount = '';
 if (empty($product->amount)) {
@@ -29,7 +31,7 @@ if (empty($product->amount)) {
         <div class="product-content">
             <h1><?php echo $product->title; ?></h1>
 
-            <div class="price">Giá: <span><?php echo $product->price; ?></span></div>
+            <div class="price">Giá: <span><?php echo $price_new; ?></span></div>
             <?php if (!empty($product->category->title)) { ?>
                 <div class="price">Thuộc loại: <span><?php echo $product->category->title; ?></span></div>
             <?php } ?>
@@ -63,7 +65,9 @@ if (empty($product->amount)) {
                 }
                 $price_new = 0;
                 if (!empty($item->price_new)) {
-                    $price_new = number_format($item->price_new);
+                    $price_new = number_format($item->price_new).' VND';
+                }else{
+                    $price_new = 'Liên hệ';
                 }
                 $url = Yii::app()->createUrl('products/view', array('id' => $item->id, 'slug' => $item->slug));
                 ?>
@@ -78,7 +82,7 @@ if (empty($product->amount)) {
                                                                      height="153"/></a><br/>
                     <strong class="blue"><a href="<?php echo $url; ?>"><?php echo $item->title; ?></a></strong><br/>
                     <br/>
-                    <strong>Giá:</strong> <strong class="red"><?php echo $price_new; ?> VNĐ</strong></div>
+                    <strong>Giá:</strong> <strong class="red"><?php echo $price_new; ?></strong></div>
             <?php
             }
             ?>

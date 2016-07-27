@@ -20,7 +20,9 @@ $this->pageTitle = Yii::app()->name;
                 }
                 $price_new = 0;
                 if (!empty($item->price_new)) {
-                    $price_new = number_format($item->price_new);
+                    $price_new = number_format($item->price_new).' VNĐ';
+                }else{
+                    $price_new = 'Liên hệ';
                 }
                 $url = Yii::app()->createUrl('products/view', array('id' => $item->id, 'slug' => $item->slug));
                 ?>
@@ -35,7 +37,7 @@ $this->pageTitle = Yii::app()->name;
                                                                      height="153"/></a><br/>
                     <strong class="blue"><a href="<?php echo $url; ?>"><?php echo $item->title; ?></a></strong><br/>
                     <br/>
-                    <strong>Giá:</strong> <strong class="red"><?php echo $price_new; ?> VNĐ</strong></div>
+                    <strong>Giá:</strong> <strong class="red"><?php echo $price_new; ?></strong></div>
             <?php
             }
             ?>

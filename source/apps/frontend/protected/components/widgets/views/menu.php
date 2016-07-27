@@ -17,7 +17,15 @@ $sec = $request->getParam('sec');
                 </ul>
             <?php endif;?>
         </li>
-        <li><a href="<?php echo Yii::app()->createUrl('content/index', array('sec'=>$sections->thuonghieu))?>" <?=($baseUrl=='content/index' && (!empty($sec) && $sec==2)) ? 'class="current"' : '';?>>Thương hiệu</a></li>
+        <li><a href="<?php echo Yii::app()->createUrl('content/index', array('sec'=>$sections->thuonghieu))?>" <?=($baseUrl=='content/index' && (!empty($sec) && $sec==2)) ? 'class="current"' : '';?>>Thương hiệu</a>
+            <?php if(!empty($manufactories)):?>
+                <ul class="level2">
+                    <?php foreach ($manufactories as $key=>$manufactory):?>
+                        <li><a href="<?php echo Yii::app()->createUrl('content/index', array('sec'=>$sections->thuonghieu, 'mid'=>$manufactory->id))?>"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/resources/images/arrow-right3.png" alt=""/><?php echo $cat->title;?></a></li>
+                    <?php endforeach;?>
+                </ul>
+            <?php endif;?>
+        </li>
         <li><a href="<?php echo Yii::app()->createUrl('content/index', array('sec'=>$sections->dichvu))?>" <?=($baseUrl=='content/index' && (!empty($sec) && $sec==4)) ? 'class="current"' : '';?>>Dịch vụ</a></li>
         <li><a href="<?php echo Yii::app()->createUrl('content/index', array('sec'=>$sections->doitac))?>" <?=($baseUrl=='content/index' && (!empty($sec) && $sec==5)) ? 'class="current"' : '';?>>Đối tác</a></li>
         <li><a href="<?php echo Yii::app()->createUrl('content/index', array('sec'=>$sections->giamgia_khuyenmai))?>" <?=($baseUrl=='content/index' && (!empty($sec) && $sec==6)) ? 'class="current"' : '';?>>Giảm giá - Khuyến mãi</a></li>
