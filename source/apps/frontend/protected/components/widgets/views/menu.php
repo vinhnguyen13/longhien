@@ -21,7 +21,7 @@ $sec = $request->getParam('sec');
             <?php if(!empty($manufactories)):?>
                 <ul class="level2">
                     <?php foreach ($manufactories as $key=>$manufactory):?>
-                        <li><a href="<?php echo Yii::app()->createUrl('content/index', array('sec'=>$sections->thuonghieu, 'mid'=>$manufactory->id))?>"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/resources/images/arrow-right3.png" alt=""/><?php echo $manufactory->name;?></a></li>
+                        <li><a href="<?php echo Yii::app()->createUrl('products/index', array('mid'=>$manufactory->id, 'cslug'=>$manufactory->name))?>"><img src="<?php echo Yii::app()->theme->baseUrl; ?>/resources/images/arrow-right3.png" alt=""/><?php echo $manufactory->name;?></a></li>
                     <?php endforeach;?>
                 </ul>
             <?php endif;?>

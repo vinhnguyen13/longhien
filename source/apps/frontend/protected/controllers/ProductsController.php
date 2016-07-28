@@ -8,12 +8,16 @@ class ProductsController extends Controller
 	public function actionIndex()
 	{
 		$catid = Yii::app()->request->getParam('catid');
+		$mid = Yii::app()->request->getParam('mid');
 		$products = new Products();
 		$criteria = new CDbCriteria();
 		$criteria->addCondition("published=1");
 		$criteria->order = 'modified DESC';
 		if(!empty($catid)){
 			$criteria->addCondition("catid='$catid'");
+		}
+		if(!empty($mid)){
+			$criteria->addCondition("manufactory_id='$mid'");
 		}
 		/** Pagination **/
 		$count = Products::model()->count($criteria);
