@@ -13,7 +13,10 @@ if(!empty($cart)){
     
     <!-- #search -->
     <div id="search">
-      <form method="post" action="<?php echo Yii::app()->createUrl('content/search');?>" id="form" enctype="multipart/form-data">
+      <form method="post" action="<?php echo Yii::app()->createUrl('content/search');?>" id="formSearch" enctype="multipart/form-data">
+          <h1>
+              CÔNG TY TNHH DV TM XNK LONG HIỂN
+          </h1>
         <fieldset class="bgsearch">
           <input type="text" name="keyword"  id="keyword" placeholder="Từ khóa tìm kiếm" />
         </fieldset>

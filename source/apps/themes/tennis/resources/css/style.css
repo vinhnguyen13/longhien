@@ -83,12 +83,14 @@ body { background:#1a303a; }
 #logo { margin-left:8px; float:left; width:260px; height:63px; margin-top:0px;}
 #logo img { max-height: 110px;}
 /*	#search  */
-#search {  float:left; width:421px; height:40px; margin-left:124px; margin-top:36px; }
-#search .bgsearch { background:transparent url(../images/bg-search.png) no-repeat top; border:none; float:left; width:326px; height:34px; margin-top:3px;} 
+#search {  float:left; width:421px; height:40px; margin-left:124px; margin-top:6px; }
+#search h1{  font-size:22px; width: 500px; padding: 10px 0; color: #eb2a2e;}
+#search #formSearch{ }
+#search .bgsearch { background:transparent url(../images/bg-search.png) no-repeat top; border:none; float:left; width:326px; height:34px;}
 #search input[type="text"] { background:none transparent; border:none; float:left; height:25px; width:182px; color:#54585b; margin-left:11px; margin-top:4px;}
 #search .selectbg { background:none transparent; border:none; float:left; height:25px; width:110px; color:#54585b; margin-left:12px; margin-top:4px; overflow:hidden;}
 #search select { background:none transparent; border:none; float:left; height:20px; width:127px; color:#54585b; padding-top:5px;}
-#search .buttonsearch { width:89px; height:40px; color:#000; text-align:center; font-weight:bold; font-size:12px;  float:right; background: transparent url(../images/bg-button-search.png) no-repeat top; }
+#search .buttonsearch { width:89px; height:40px; color:#000; text-align:center; font-weight:bold; font-size:12px;  float:right;  padding-left: 10px;background: transparent url(../images/bg-button-search.png) no-repeat top; }
 #search .buttonsearch:hover { background: transparent url(../images/bg-button-search-hover.png) no-repeat top;  }
 
 /*	#cart  */

@@ -7,7 +7,7 @@ $this->pageTitle=Yii::app()->name . ' - Contact Us';
 $this->breadcrumbs=array(
 	'Contact',
 );
-$url = 'https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=91+Th%C3%A0nh+Th%C3%A1i,+14,+Qu%E1%BA%ADn+10,+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=37.188995,86.572266&amp;ie=UTF8&amp;hq=&amp;hnear=91+Th%C3%A0nh+Th%C3%A1i,+14,+Qu%E1%BA%ADn+10,+H%E1%BB%93+Ch%C3%AD+Minh,+Vietnam&amp;ll=10.7736571,106.6646504&amp;spn=0.005638,0.010568&amp;t=m&amp;z=14&amp;output=embed';
+$url = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1904889704483!2d106.65228121532544!3d10.796717861769931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752935dc649a6b%3A0xb7c3f14bd841a1f5!2zNTQgWHXDom4gRGnhu4d1LCBQaMaw4budbmcgNCwgVMOibiBCw6xuaCwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1464429247919';
 ?>
 <div class="block-content-large content-margin">
 	<h2>Liên hệ</h2>
