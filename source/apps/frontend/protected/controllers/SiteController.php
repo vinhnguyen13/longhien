@@ -52,12 +52,14 @@ class SiteController extends Controller
 		$count = Products::model()->count($criteria);
         $pages=new CPagination($count);
         //Results per page
-        $pages->pageSize=32;
+        $pages->pageSize=10;
         $pages->applyLimit($criteria);
-        
         $products = Products::model()->findAll($criteria);
-        
-        $products2 = Products::model()->findAllByAttributes(array("new"=>1));
+        $products2 = Products::model()->findAllByAttributes(array("new"=>1),
+			array(
+//				'order' => 'date desc',
+				'limit' => 10,
+			));
 		$this->render('index', array(
 			'products'=>$products,
 			'products2'=>$products2,
