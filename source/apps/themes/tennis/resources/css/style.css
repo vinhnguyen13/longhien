@@ -84,7 +84,7 @@ body { background:#1a303a; }
 #logo img { max-height: 110px;}
 /*	#search  */
 #search {  float:left; width:421px; height:40px; margin-left:124px; margin-top:6px; }
-#search h1{  font-size:22px; width: 500px; padding: 10px 0; color: #eb2a2e;}
+#search h1{  font-size:24px; width: 500px; padding: 10px 0; color: #eb2a2e; font-family: 'MyriadPro-Cond',Sans-Serif;}
 #search #formSearch{ }
 #search .bgsearch { background:transparent url(../images/bg-search.png) no-repeat top; border:none; float:left; width:326px; height:34px;}
 #search input[type="text"] { background:none transparent; border:none; float:left; height:25px; width:182px; color:#54585b; margin-left:11px; margin-top:4px;}

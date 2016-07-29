@@ -149,7 +149,7 @@ class ServicesController extends Controller
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Content']))
 			$model->attributes=$_GET['Content'];
-		$model->sectionid = $this->sections->services;
+		$model->sectionid = $this->sections->dichvu;
 		$this->render('admin',array(
 			'model'=>$model,
 		));
