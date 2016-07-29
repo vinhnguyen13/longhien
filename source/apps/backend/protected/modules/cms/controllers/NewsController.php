@@ -149,7 +149,7 @@ class NewsController extends Controller
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Content']))
 			$model->attributes=$_GET['Content'];
-		$model->sectionid = $this->sections->news;
+		$model->sectionid = $this->sections->home;
 		$this->render('admin',array(
 			'model'=>$model,
 		));

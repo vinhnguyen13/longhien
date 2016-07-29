@@ -60,9 +60,16 @@ class SiteController extends Controller
 //				'order' => 'date desc',
 				'limit' => 10,
 			));
+
+		$content = Content::model()->findAllByAttributes(array("sectionid"=>$this->sections->home),
+			array(
+//				'order' => 'date desc',
+				'limit' => 3,
+			));
 		$this->render('index', array(
 			'products'=>$products,
 			'products2'=>$products2,
+			'content'=>$content,
 			'pages' => $pages
 		));
 	}

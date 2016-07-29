@@ -44,6 +44,7 @@ return array(
 		'doitac'=>5,
 		'giamgia_khuyenmai'=>6,
 		'contact'=>7,
+		'news'=>8,
 	)
 	
 );

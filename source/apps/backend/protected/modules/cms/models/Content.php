@@ -30,6 +30,7 @@
  */
 class Content extends CActiveRecord
 {
+	public $sectionids = array();
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -127,7 +128,11 @@ class Content extends CActiveRecord
 		$criteria->compare('introtext',$this->introtext,true);
 		$criteria->compare('fulltext',$this->fulltext,true);
 		$criteria->compare('home',$this->home);
-		$criteria->compare('sectionid',$this->sectionid);
+		if(!empty($this->sectionids)){
+			$criteria->compare('sectionid',$this->sectionids, true, 'IN');
+		}else{
+			$criteria->compare('sectionid',$this->sectionid);
+		}
 		$criteria->compare('catid',$this->catid);
 		$criteria->compare('created',$this->created);
 		$criteria->compare('created_by',$this->created_by);
