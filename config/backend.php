@@ -15,6 +15,7 @@ return array(
 	'theme' => 'cms',
 	'runtimePath' => $backend . DIRECTORY_SEPARATOR . 'runtime',
 	'preload'=>array('log'),
+	'language' => 'vi',
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
