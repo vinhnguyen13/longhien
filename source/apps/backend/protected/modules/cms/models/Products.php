@@ -12,6 +12,8 @@
  * @property integer $home
  * @property integer $sectionid
  * @property integer $catid
+ * @property integer $manufactory_id
+ * @property integer $made_in
  * @property integer $created
  * @property integer $created_by
  * @property integer $modified
@@ -64,13 +66,13 @@ class Products extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('title, introtext, fulltext', 'required'),
-			array('home, sectionid, catid, created, created_by, modified, modified_by, published, public_time, ordering, hits, access, amount, discount, promotions, new, fast_selling', 'numerical', 'integerOnly'=>true),
+			array('home, sectionid, catid, manufactory_id, made_in, created, created_by, modified, modified_by, published, public_time, ordering, hits, access, amount, discount, promotions, new, fast_selling', 'numerical', 'integerOnly'=>true),
 			array('title, slug', 'length', 'max'=>255),
 			array('price, price_new', 'length', 'max'=>20),
 			array('images, urls, metakey, metadesc, metadata, params', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, title, slug, introtext, fulltext, home, sectionid, catid, created, created_by, modified, modified_by, published, public_time, images, urls, ordering, metakey, metadesc, metadata, hits, params, access, price, amount, discount, price_new, promotions, new, fast_selling', 'safe', 'on'=>'search'),
+			array('id, title, slug, introtext, fulltext, home, sectionid, catid, manufactory_id, made_in, created, created_by, modified, modified_by, published, public_time, images, urls, ordering, metakey, metadesc, metadata, hits, params, access, price, amount, discount, price_new, promotions, new, fast_selling', 'safe', 'on'=>'search'),
 		);
 	}
 
