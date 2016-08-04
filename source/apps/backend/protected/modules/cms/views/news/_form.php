@@ -81,7 +81,7 @@
 		?>
 	</div>
 	
-	<?php echo $form->hiddenField($model, 'sectionid', array('value'=>$this->sections->news)); ?>
+	<?php echo $form->hiddenField($model, 'sectionid', array('value'=>$this->sections->home)); ?>
 	
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

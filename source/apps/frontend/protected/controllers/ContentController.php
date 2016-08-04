@@ -76,7 +76,6 @@ class ContentController extends Controller
 		$keyword = Yii::app()->request->getPost('keyword');
 
 		if(!empty($keyword)){
-			Yii::app()->layout = 'products';
 			$catid = Yii::app()->request->getParam('catid');
 			$products = new Products();
 			$criteria = new CDbCriteria();

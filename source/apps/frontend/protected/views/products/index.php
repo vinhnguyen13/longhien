@@ -21,8 +21,6 @@ $this->pageTitle = Yii::app()->name;
                 $price_new = 0;
                 if (!empty($item->price_new)) {
                     $price_new = number_format($item->price_new).' VNĐ';
-                }else{
-                    $price_new = 'Liên hệ';
                 }
                 $url = Yii::app()->createUrl('products/view', array('id' => $item->id, 'slug' => $item->slug));
                 ?>

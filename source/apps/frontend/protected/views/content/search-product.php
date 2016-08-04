@@ -3,11 +3,11 @@
 
 $this->pageTitle=Yii::app()->name;
 ?>
-<div class="block-content-large content-margin"> 
+<div class="block-content-large content-margin">
 	  <h2>Tìm kiếm</h2>
 	  <!--.items-content -->
 	  <div class="items-content">
-	  	<?php 
+	  	<?php
 		  if(!empty($products)):
 		  	foreach ($products as $item) {
 		  		$src = Yii::app()->theme->baseUrl.'/resources/images/no_photo.jpg';
@@ -31,14 +31,14 @@ $this->pageTitle=Yii::app()->name;
 	      <strong class="blue"><a href="<?php echo $url;?>"><?php echo $item->title;?></a></strong><br />
 	      <br />
 	      <strong>Giá:</strong> <strong class="red"><?php echo $price;?> VNĐ</strong> </div>
-	    <?php 
+	    <?php
 		  	}
 		  	endif;
 		  ?>
 	    <div class="clearb"></div>
-	    
+
 	    <!-- .paging1 -->
-	    <div class="paging1"> 
+	    <div class="paging1">
 	      <!--.showinfo -->
 	      <div class="showinfo"> <strong>Hiển thị</strong>
 	        <div class="seclectpage-wrap">
@@ -49,14 +49,14 @@ $this->pageTitle=Yii::app()->name;
 	          </select>
 	        </div>
 	      </div>
-	      <!--End .showinfo --> 
-	      
-	      <?php $this->widget('backend.extensions.ExtLinkPager', array('pages' => $pages,)); ?> 
+	      <!--End .showinfo -->
+
+	      <?php $this->widget('backend.extensions.ExtLinkPager', array('pages' => $pages,)); ?>
 	      </div>
-	    <!-- End .paging1 --> 
-	    
+	    <!-- End .paging1 -->
+
 	  </div>
 	  <!--ENd .items-content -->
-	  
+
 	  <div class="content-footer"></div>
 	</div>

@@ -20,7 +20,7 @@ $(window).load(function(){
             $("#gallery").simplecarousel({
                 width:170,
                 height:190,
-                visible: 4,
+                visible: 5,
                 auto: 5000,
                 next: $('#gallery-next'),
                 prev: $('#gallery-prev')

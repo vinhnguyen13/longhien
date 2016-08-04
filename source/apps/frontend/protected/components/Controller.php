@@ -53,6 +53,9 @@ class Controller extends CController
 				case 'news':
 				case 'services':
 					$layout = 'news';
+					if(in_array($action->controller->action->id, array('search'))){
+						$layout = 'products';
+					}
 					break;
 				case 'pay':
 				case 'products':

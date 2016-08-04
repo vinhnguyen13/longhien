@@ -54,12 +54,14 @@ $advs = Advertising::model()->findAllByAttributes(array('position'=>'event'), ar
 	  		}
 	  		$price = 0;
 	  		if(!empty($item->price_new)){
-	  			$price = number_format((int)$item->price_new);
-	  		}
+	  			$price = number_format((int)$item->price_new).' VND';
+	  		}else{
+				$price = 'Liên hệ';
+			}
 	  		$url = Yii::app()->createUrl('products/view', array('id'=>$item->id, 'slug'=>$item->slug));
 		  ?>  
-        <li><a href="<?php echo $url;?>"><img src="<?php echo $src;?>" alt="" /></a><br />
-        <strong class="blue"><?php echo $item->title;?></strong><br /><br /><strong>Giá:</strong> <strong class="red"><?php echo $price;?> VNĐ</strong></li>
+        <li><a href="<?php echo $url;?>" title="<?=$item->title?>"><img src="<?php echo $src;?>" alt="" /></a><br />
+        <strong class="blue" title="<?=$item->title?>"><?php echo Util::partString($item->title, 0, 30);?></strong><br /><br /><strong>Giá:</strong> <strong class="red"><?php echo $price;?></strong></li>
         <?php 
 		}
         ?>
@@ -128,7 +130,7 @@ $advs = Advertising::model()->findAllByAttributes(array('position'=>'event'), ar
 					<h5>
 						<a href="<?php echo Yii::app()->createUrl('services/view', array('id' => $item->id, 'slug' => $item->slug)) ?>"><?php echo $item->title; ?></a>
 					</h5>
-					<h4><?php echo date("l - d/m/Y", $item->created); ?></h4>
+					<h4><?php echo date("l - d/m/Y", $item->modified); ?></h4>
 					<?php echo $item->introtext; ?>
 				</div>
 				<?php

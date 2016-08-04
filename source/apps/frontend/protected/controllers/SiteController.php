@@ -57,7 +57,7 @@ class SiteController extends Controller
         $products = Products::model()->findAll($criteria);
         $products2 = Products::model()->findAllByAttributes(array("new"=>1),
 			array(
-//				'order' => 'date desc',
+				'order' => 'modified desc',
 				'limit' => 10,
 			));
 
