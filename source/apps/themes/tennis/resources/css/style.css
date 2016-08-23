@@ -176,6 +176,7 @@ color: #ffb000;}
 
 /*	#center-left */
 #center-left { float:left; /* width:580px; */  }
+#center-left img{ max-width: 550px;}
 
  /* Slideshow #slidetop*/
 #slidetop { width:780px; height:305px; float:left; position:relative; z-index: 5;  }

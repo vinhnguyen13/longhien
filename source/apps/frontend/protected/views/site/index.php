@@ -126,9 +126,9 @@ $advs = Advertising::model()->findAllByAttributes(array('position'=>'event'), ar
 			foreach ($content as $item) {
 				$src = $item->images;
 				?>
-				<div class="news-items"><a href="#"><img alt="" src="<?php echo $src; ?>"></a>
+				<div class="news-items"><a href="<?php echo Yii::app()->createUrl('content/view', array('id' => $item->id, 'slug' => $item->slug)) ?>"><img alt="" src="<?php echo $src; ?>"></a>
 					<h5>
-						<a href="<?php echo Yii::app()->createUrl('services/view', array('id' => $item->id, 'slug' => $item->slug)) ?>"><?php echo $item->title; ?></a>
+						<a href="<?php echo Yii::app()->createUrl('content/view', array('id' => $item->id, 'slug' => $item->slug)) ?>"><?php echo $item->title; ?></a>
 					</h5>
 					<h4><?php echo date("l - d/m/Y", $item->modified); ?></h4>
 					<?php echo $item->introtext; ?>

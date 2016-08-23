@@ -14,7 +14,7 @@
 	<div class="clearb"></div>	
 	
 	<!-- .othernews --> 
-	<div class="othernews">
+	<div class="othernews" style="display: none;">
 	<h2>Các Tin khác</h2>
 	<ul>
 	<li><a href="#"><img alt="" src="images/image27.jpg"></a> <strong><a href="#">Nam liber tempor cum soluta nobis eleifend</a></strong><br>Thứ 6 - 9/11/2012 </li>
