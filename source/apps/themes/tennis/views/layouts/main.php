@@ -8,7 +8,7 @@
 <meta name="robots" content="index, follow" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta name="referrer" content="default"/>
-<link href="<?php echo Yii::app()->theme->baseUrl; ?>/resources/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo Yii::app()->theme->baseUrl; ?>/resources/css/style.css?t=<?=time()?>" rel="stylesheet" type="text/css" media="all" />
 <link href="<?php echo Yii::app()->theme->baseUrl; ?>/resources/css/libs.css" rel="stylesheet" type="text/css" media="all" />
 <link href=http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/ui-lightness/jquery-ui.css rel="stylesheet" type="text/css" media="all" />
 

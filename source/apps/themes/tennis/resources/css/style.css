@@ -81,7 +81,7 @@ body { background:#1a303a; }
 #page { margin:0 auto; width:1000px;  }
 #header { height:111px; width:1000px; margin:0 auto; background-color: white;margin-top: 5px;}
 #header .slogan{  width: 400px; float: left; padding: 3px 0 0 140px;}
-#header .slogan h1{  font-size:38px; width: 500px; padding: 5px 0; color: #eb2a2e; font-family: 'MyriadPro-Cond',Sans-Serif;}
+#header .slogan h1{  font-size:30px; width: 500px; padding: 5px 0; color: #eb2a2e; font-family: 'MyriadPro-Cond',Sans-Serif;}
 #logo { margin-left:8px; float:left; width:260px; height:63px; margin-left:15px;}
 #logo img { max-height: 110px;}
 /*	#search  */

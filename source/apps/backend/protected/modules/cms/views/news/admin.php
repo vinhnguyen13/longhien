@@ -47,8 +47,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'title',
 		array(
 			'header' => 'Created',
-			'name' => 'created',
-			'value' => 'date("H:i:s d-m-Y", $data->created)',
+			'name' => 'modified',
+			'value' => 'date("H:i:s d-m-Y", $data->modified)',
 		),
 		/*
 		'id',
