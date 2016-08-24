@@ -1,9 +1,4 @@
-.idea/.name
-.idea/longhien.iml
-.idea/misc.xml
-.idea/modules.xml
-.idea/vcs.xml
-.idea/workspace.xml
+.idea/
 source/apps/frontend/protected/runtime/
 source/apps/frontend/protected/assets/
 source/apps/backend/protected/runtime/

@@ -35,7 +35,7 @@ if (empty($product->amount)) {
             <?php if (!empty($product->category->title)) { ?>
                 <div class="price">Thuộc loại: <span><?php echo $product->category->title; ?></span></div>
             <?php } ?>
-            <div class="price">Ngày đăng: <span><?= date('d-m-Y', $product->created); ?></span></div>
+            <div class="price">Ngày đăng: <span><?= date('d-m-Y', $product->modified); ?></span></div>
             <div class="desc">
                 <?php echo $product->fulltext; ?>
             </div>

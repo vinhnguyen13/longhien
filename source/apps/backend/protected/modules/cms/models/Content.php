@@ -159,6 +159,7 @@ class Content extends CActiveRecord
 	}
 	
 	public function beforeSave(){
+		$this->params = json_encode($this->params);
 		if($this->isNewRecord){
 			$this->created = time();
 		}

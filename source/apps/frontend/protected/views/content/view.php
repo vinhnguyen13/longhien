@@ -1,5 +1,9 @@
 <?php
 /* @var $this SiteController */
+$src = Yii::app()->theme->baseUrl.'/resources/images/no_photo.jpg';
+if(!empty($content->images) && is_file(Yii::getPathOfAlias('pathroot').$content->images)){
+	$src = $content->images;
+}
 ?>
 <div class="block-content-small">
 	<div class="title">Tin tức</div>
@@ -8,7 +12,10 @@
 	<div class="content-detail">
 	<h1><?php echo $content->title;?></h1>
 	<h3><?php echo date("l - d/m/Y", $content->created);?></h3>
-	<?php echo $content->fulltext;?>
+		<img src="<?=$src?>">
+		<div>
+			<?php echo $content->fulltext;?>
+		</div>
 	</div>
 	<!-- End .content-detail --> 
 	<div class="clearb"></div>	
