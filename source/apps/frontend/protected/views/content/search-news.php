@@ -7,7 +7,7 @@
   ?>
   <div class="news-items"> <a href="#"><img alt="" src="<?php echo $src;?>"></a>
     <h3><a href="<?php echo Yii::app()->createUrl('news/view', array('id'=>$item->id, 'slug'=>$item->slug))?>"><?php echo $item->title;?></a></h3>
-    <h4><?php echo date("l - d/m/Y", $item->created);?></h4>
+    <h4><?php echo date("l - d/m/Y", $item->modified);?></h4>
     <?php echo $item->introtext;?>
   </div>
   <?php 

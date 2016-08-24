@@ -11,7 +11,7 @@ if(!empty($content->images) && is_file(Yii::getPathOfAlias('pathroot').$content-
 	<!--  .content-detail --> 
 	<div class="content-detail">
 	<h1><?php echo $content->title;?></h1>
-	<h3><?php echo date("l - d/m/Y", $content->created);?></h3>
+	<h3><?php echo date("l - d/m/Y", $content->modified);?></h3>
 		<img src="<?=$src?>">
 	<?php echo $content->fulltext;?>
 	</div>
@@ -33,7 +33,7 @@ if(!empty($content->images) && is_file(Yii::getPathOfAlias('pathroot').$content-
   		}
   		$href = Yii::app()->createUrl('news/view', array('id'=>$item->id, 'slug'=>$item->slug));
 	?>
-	<li><a href="<?php echo $href;?>"><img alt="" src="<?php echo Yii::app()->createUrl($src);?>" width="65" height="50"></a> <strong><a href="<?php echo $href;?>"><?php echo $item->title;?></a></strong><br><?php echo date("l - d/m/Y", $item->created);?></li>
+	<li><a href="<?php echo $href;?>"><img alt="" src="<?php echo Yii::app()->createUrl($src);?>" width="65" height="50"></a> <strong><a href="<?php echo $href;?>"><?php echo $item->title;?></a></strong><br><?php echo date("l - d/m/Y", $item->modified);?></li>
 	<?php 
 	}
 	?>

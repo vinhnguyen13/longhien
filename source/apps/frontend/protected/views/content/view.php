@@ -11,7 +11,7 @@ if(!empty($content->images) && is_file(Yii::getPathOfAlias('pathroot').$content-
 	<!--  .content-detail --> 
 	<div class="content-detail">
 	<h1><?php echo $content->title;?></h1>
-	<h3><?php echo date("l - d/m/Y", $content->created);?></h3>
+	<h3><?php echo date("l - d/m/Y", $content->modified);?></h3>
 		<img src="<?=$src?>">
 		<div>
 			<?php echo $content->fulltext;?>
