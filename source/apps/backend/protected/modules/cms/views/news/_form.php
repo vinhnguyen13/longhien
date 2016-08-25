@@ -90,3 +90,14 @@
 <?php $this->endWidget(); ?>
 
 </div><!-- form -->
+
+<script>
+	$(document).ready(function () {
+		$.cleditor.buttons.image.uploadUrl = '/admin/cms/default/upload';
+		// Url for images list
+		$.cleditor.buttons.image.imageListUrl = '/admin/cms/default/images';
+		$.cleditor.defaultOptions.width = 600;
+		$.cleditor.defaultOptions.height = 300;
+		$("#Content_fulltext").cleditor();
+	});
+</script>

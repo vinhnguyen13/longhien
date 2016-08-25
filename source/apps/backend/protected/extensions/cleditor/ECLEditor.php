@@ -71,6 +71,7 @@ class ECLEditor extends CInputWidget
 		if(is_dir($assets)){
 			Yii::app()->clientScript->registerCoreScript('jquery');
 			Yii::app()->clientScript->registerScriptFile($baseUrl.'/jquery.cleditor.min.js',CClientScript::POS_HEAD);
+			Yii::app()->clientScript->registerScriptFile($baseUrl.'/cleditor-imageupload-plugin.js',CClientScript::POS_HEAD);
 			Yii::app()->clientScript->registerCssFile($baseUrl.'/jquery.cleditor.css');
 		} else {
 			throw new Exception('EClEditor - Error: Couldn\'t find assets to publish.');

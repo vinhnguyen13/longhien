@@ -139,7 +139,7 @@ class VModel {
 	 * get folder
 	 * @param $path
 	 */
-	private function getFolder($path){
+	public function getFolder($path){
 		if(!is_dir($path)){
 			mkdir($path);
 			chmod($path, 775);				
