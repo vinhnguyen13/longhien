@@ -23,6 +23,7 @@ class DefaultController extends Controller
 	{
 		$dir = Yii::getPathOfAlias('pathroot').DS.'uploads'.DS.'editor';
 		$dh  = opendir($dir);
+		$files = array();
 		while (false !== ($filename = readdir($dh))) {
 			if(!in_array($filename, array('.', '..'))){
 				$files[] = Yii::app()->request->getHostInfo().'/uploads/editor/'.$filename;
