@@ -3,7 +3,7 @@
 
 $this->pageTitle=Yii::app()->name;
 $advs = Advertising::model()->findAllByAttributes(array('position'=>'event'), array(
-        'order' => 'modified desc',
+        'order' => 'created desc',
         'limit' => '1',
     ));
 ?>
