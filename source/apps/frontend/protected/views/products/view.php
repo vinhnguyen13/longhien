@@ -22,37 +22,41 @@ if (empty($product->amount)) {
 ?>
 
 <div class="block-content-large content-margin">
-    <h2>CHI TIẾT SẢN PHẨM</h2>
+    <h2><span class="bg">CHI TIẾT SẢN PHẨM</span></h2>
     <!--.product-detail -->
-    <div class="product-detail">
-        <div class="imgproduct"><a href="<?php echo $src; ?>" class="jqzoom" rel='gal1' title="image"><img
+    <div class="product-detail inner-box">
+        <div class="center-box">
+            <div class="imgproduct"><a href="<?php echo $src; ?>" class="jqzoom" rel='gal1' title="image"><img
                     src="<?php echo $src; ?>" alt="image" class="imgpro"/></a></div>
-        <!--.product-content -->
-        <div class="product-content">
-            <h1><?php echo $product->title; ?></h1>
+            <!--.product-content -->
+            <div class="product-content">
+                <h1><?php echo $product->title; ?></h1>
 
-            <div class="price">Giá: <span><?php echo $price_new; ?></span></div>
-            <?php if (!empty($product->category->title)) { ?>
-                <div class="price">Thuộc loại: <span><?php echo $product->category->title; ?></span></div>
-            <?php } ?>
-            <div class="price">Ngày đăng: <span><?= date('d-m-Y', $product->modified); ?></span></div>
-            <div class="desc">
-                <?php echo $product->fulltext; ?>
+                <div class="price">Giá: <span><?php echo $price_new; ?></span></div>
+                <?php if (!empty($product->category->title)) { ?>
+                    <div class="price">Thuộc loại: <span><?php echo $product->category->title; ?></span></div>
+                <?php } ?>
+                <div class="price">Ngày đăng: <span><?= date('d-m-Y', $product->modified); ?></span></div>
+                <div class="desc">
+                    <?php echo $product->fulltext; ?>
+                </div>
+                <div class="clearb"><br/>
+                </div>
             </div>
-            <div class="clearb"><br/>
-            </div>
+            <div class="clearb"></div>
         </div>
+        
         <!--End .product-content -->
     </div>
     <!--End .product-detail -->
-    <div class="clearb"></div>
-    <div class="content-footer"></div>
+    
 </div>
 <?php if (!empty($products)):?>
 <div class="block-content-large content-margin">
-    <h2 class="h2">SẢN PHẨM CÙNG LOẠI</h2>
+    <h2 class="h2"><span class="bg">SẢN PHẨM CÙNG LOẠI</span></h2>
     <!--.items-content -->
-    <div class="items-content">
+    <div class="items-content inner-box">
+        <div class="center-box">
         <?php
             foreach ($products as $item) {
                 $src = Yii::app()->theme->baseUrl . '/resources/images/no_photo.jpg';
@@ -78,10 +82,9 @@ if (empty($product->amount)) {
                     <?php if (!empty($item->new)): ?>
                         <!-- 	    	<span class="new-pro"></span>  -->
                     <?php endif; ?>
-                    <a href="<?php echo $url; ?>" class="bgImg"><img src="<?php echo $src; ?>" alt="" width="153"
+                    <a href="<?php echo $url; ?>" class="bgImg pic-intro"><img src="<?php echo $src; ?>" alt="" width="153"
                                                                      height="153"/></a><br/>
-                    <strong class="blue"><a href="<?php echo $url; ?>"><?php echo $item->title; ?></a></strong><br/>
-                    <br/>
+                    <strong class="blue"><a href="<?php echo $url; ?>"><?php echo $item->title; ?></a></strong>
                     <strong>Giá:</strong> <strong class="red"><?php echo $price_new; ?></strong></div>
             <?php
             }
@@ -95,11 +98,8 @@ if (empty($product->amount)) {
             </div>
             <?php endif; ?>
             <!-- End .paging1 -->
-
+            </div>
     </div>
     <!--ENd .items-content -->
-
-
-    <div class="content-footer"></div>
 </div>
 <?php endif; ?>

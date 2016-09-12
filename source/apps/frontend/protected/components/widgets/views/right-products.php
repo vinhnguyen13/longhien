@@ -14,14 +14,15 @@
 		  		}
 		  		$url = Yii::app()->createUrl('products/view', array('id'=>$item->id, 'slug'=>$item->slug));
           ?>
-            <li><a href="<?php echo $url;?>"><img src="<?php echo $src;?>" alt="" /></a><br />
-              <strong class="blue"><?php echo $item->title; ?></strong><br />
-              <br />
-              <strong>Giá:</strong> <strong class="red"><?php echo $price;?> VNĐ</strong></li>
-            
+            <li>
+              <a class="pic-intro wrap-img" href="<?php echo $url;?>"><img src="<?php echo $src;?>" alt="" /></a>
+              <div>
+                <strong class="blue"><?php echo $item->title; ?></strong>
+                <strong>Giá:</strong> <strong class="red"><?php echo $price;?> VNĐ</strong>
+              </div>
+            </li>
               <?php }?>
           </ul>
-          <div class="bg-menu-footer"></div>
         </div>
         <?php 
 		}

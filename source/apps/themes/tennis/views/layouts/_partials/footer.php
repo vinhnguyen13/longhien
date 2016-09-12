@@ -1,9 +1,9 @@
 <div id="footer">
       <div class="linkfooter">
-        <p><a href="<?php echo Yii::app()->createUrl('site/index', array())?>">Trang chủ</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
-        <a href="<?php echo Yii::app()->createUrl('content/introduction', array())?>">Giới thiệu</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
-        <a href="<?php echo Yii::app()->createUrl('products', array())?>">Sản phẩm</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
-        <a href="<?php echo Yii::app()->createUrl('content/services', array())?>">Dịch vụ</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+        <p><a href="<?php echo Yii::app()->createUrl('site/index', array())?>">Trang chủ</a> <span>|</span>
+        <a href="<?php echo Yii::app()->createUrl('content/introduction', array())?>">Giới thiệu</a> <span>|</span>
+        <a href="<?php echo Yii::app()->createUrl('products', array())?>">Sản phẩm</a> <span>|</span>
+        <a href="<?php echo Yii::app()->createUrl('content/services', array())?>">Dịch vụ</a> <span>|</span>
         <a href="<?php echo Yii::app()->createUrl('site/contact', array())?>">Liên hệ</a></p>
       </div>
       <div class="clearb"></div>

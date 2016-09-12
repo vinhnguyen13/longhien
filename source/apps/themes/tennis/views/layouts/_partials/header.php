@@ -17,7 +17,7 @@ if(!empty($cart)){
     </div>
     <div id="search">
       <form method="post" action="<?php echo Yii::app()->createUrl('content/search');?>" id="formSearch" enctype="multipart/form-data">
-
+          <a href="#" id="menu-mobi"></a>
           <div class="wrap-box-search">
             <fieldset class="bgsearch">
                 <input type="text" name="keyword"  id="keyword" placeholder="Từ khóa tìm kiếm" />

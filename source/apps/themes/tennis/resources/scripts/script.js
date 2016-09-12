@@ -28,8 +28,8 @@ $(window).load(function(){
 			
 			   // gallery1
             $("#gallery1").simplecarousel({
-                width:169,
-                height:210,
+                width:173,
+                height:216,
                 visible: 2,
 				vertical: true,
                 auto: 5000,
@@ -53,3 +53,16 @@ document.getElementById(id).style.display = "block";
 }
 
 
+$(document).ready(function () {
+    $('#menu-mobi').on('click', function () {
+        var _this = $(this);
+
+        if ( _this.hasClass('active') ) {
+            _this.removeClass('active');
+            $('#bgmenu').velocity("slideUp", { duration: 500 })
+        }else {
+            _this.addClass('active');
+            $('#bgmenu').velocity("slideDown", { duration: 500 })
+        }
+    });
+});

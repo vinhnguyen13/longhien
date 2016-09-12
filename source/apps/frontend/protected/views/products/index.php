@@ -4,9 +4,10 @@
 $this->pageTitle = Yii::app()->name;
 ?>
 <div class="block-content-large content-margin">
-    <h2>SẢN PHẨM</h2>
+    <h2><span class="bg">SẢN PHẨM</span></h2>
     <!--.items-content -->
-    <div class="items-content">
+    <div class="items-content inner-box">
+        <div class="center-box">
         <?php
         if (!empty($products)):
             foreach ($products as $item) {
@@ -31,10 +32,9 @@ $this->pageTitle = Yii::app()->name;
                     <?php if (!empty($item->new)): ?>
                         <!-- 	    	<span class="new-pro"></span>  -->
                     <?php endif; ?>
-                    <a href="<?php echo $url; ?>" class="bgImg"><img src="<?php echo $src; ?>" alt="" width="153"
-                                                                     height="153"/></a><br/>
-                    <strong class="blue"><a href="<?php echo $url; ?>"><?php echo $item->title; ?></a></strong><br/>
-                    <br/>
+                    <a href="<?php echo $url; ?>" class="bgImg pic-intro"><img src="<?php echo $src; ?>" alt="" width="153"
+                                                                     height="153"/></a>
+                    <strong class="blue"><a href="<?php echo $url; ?>"><?php echo $item->title; ?></a></strong>
                     <strong>Giá:</strong> <strong class="red"><?php echo $price_new; ?></strong></div>
             <?php
             }
@@ -49,8 +49,8 @@ $this->pageTitle = Yii::app()->name;
             <?php endif; ?>
             <!-- End .paging1 -->
         <?php endif; ?>
+
+        </div>
     </div>
     <!--ENd .items-content -->
-
-    <div class="content-footer"></div>
 </div>

@@ -1,14 +1,16 @@
 <?php
 /* @var $this SiteController */
 ?>
-<div class="block-content-small">
-	<div class="title">Dịch vụ</div>
+<div class="block-content-large th-box block-content-small">
+	<h2><span class="bg">Dịch vụ</span></h2>
 	
 	<!--  .content-detail --> 
-	<div class="content-detail">
-	<h1><?php echo $content->title;?></h1>
-	<h3><?php echo date("l - d/m/Y", $content->modified);?></h3>
-	<?php echo $content->fulltext;?>
+	<div class="inner-box block-news content-detail">
+		<div class="center-box">
+			<h1><?php echo $content->title;?></h1>
+			<h3><?php echo date("l - d/m/Y", $content->modified);?></h3>
+			<?php echo $content->fulltext;?>
+		</div>
 	</div>
 	<!-- End .content-detail --> 
 	<div class="clearb"></div>	
@@ -26,8 +28,6 @@
 	</ul>
 	</div>
 	<!-- End .othernews --> 
-
-	<div class="content-footer"></div>
 </div>
 
 

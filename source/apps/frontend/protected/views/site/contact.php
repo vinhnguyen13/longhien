@@ -10,8 +10,10 @@ $this->breadcrumbs=array(
 $url = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1904889704483!2d106.65228121532544!3d10.796717861769931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752935dc649a6b%3A0xb7c3f14bd841a1f5!2zNTQgWHXDom4gRGnhu4d1LCBQaMaw4budbmcgNCwgVMOibiBCw6xuaCwgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1464429247919';
 ?>
 <div class="block-content-large content-margin">
-	<h2>Liên hệ</h2>
-	<h4>thông tin liên hệ</h4>
+	<h2><span class="bg">Liên hệ</span></h2>
+	<div class="inner-box">
+		<div class="center-box">
+			<h4>thông tin liên hệ</h4>
 	 <fieldset class="fieldset-contact">
 	   <?php $form=$this->beginWidget('CActiveForm', array(
 			'id'=>'contact-form',
@@ -69,5 +71,7 @@ $url = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.1904889704483
 	<div class="map-contact">
 		<iframe width="573" scrolling="no" height="327" frameborder="0" class="maps-iframe" src="<?php echo $url;?>" marginwidth="0" marginheight="0"></iframe>
 	</div>
-	<div class="content-footer"></div>
+		</div>
+	</div>
+	
 </div>
