@@ -253,25 +253,29 @@ body {
 }
 
 #header .slogan {
-    /* width: 400px; */
+    width: 70%;
     float: right;
     /* padding: 3px 0 0 100px; */
 }
 
 #header .slogan h1 {
     font-size: 27px;
-    width: 605px;
-    padding: 5px 0;
+    /* width: 605px; */
+    padding: 12px 0;
     color: #eb2a2e;
-    font-family: "Arial Black", Gadget, sans-serif;
+    /* font-family: "Arial Black", Gadget, sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 #logo {
-    margin-left: 8px;
+    /* margin-left: 8px; */
     float: left;
-    width: 260px;
+    /* width: 260px; */
     height: 110px;
-    margin-left: 15px;
+    /* margin-left: 15px; */
+    width: 30%;
 }
 
 #logo img {
@@ -284,7 +288,7 @@ body {
 
 #search {
     float: right;
-    /* width: 100%; */
+    width: 70%;
     height: 40px;
     /* padding-left:184px; */
     text-align: right;
@@ -295,10 +299,14 @@ body {
 #search .bgsearch {
     background: transparent url(../images/bg-search.png) no-repeat top;
     border: none;
-    float: left;
+    /* float: left; */
     width: 326px;
     height: 34px;
-    margin-top: 2px;
+    /* margin-top: 2px; */
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    top: 2px;
 }
 
 #search input[type="text"] {
@@ -341,9 +349,10 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 12px;
-    float: right;
+    /* float: right; */
     /* padding-left: 10px; */
     background: transparent url(../images/bg-button-search.png) no-repeat top;
+    display: inline-block;
 }
 
 #search .buttonsearch:hover {
@@ -2215,3 +2224,8 @@ ul#gallery {
 / When clicking on thumbs jqzoom will add the class
 / "zoomThumbActive" on the anchor selected
 /*********************************************************/
+.wrap-box-search {
+    overflow: hidden;
+    vertical-align: top;
+    text-align: center;
+}

@@ -177,8 +177,8 @@
         padding: 0;
     }
     #logo {
-        width: 30%;
-        float: left;
+        /* width: 30%; */
+        /* float: left; */
         margin: 0;
         padding: 15px 0 0 10px;
     }
@@ -192,27 +192,28 @@
         max-height: 100%;
     }
     #header .slogan {
-        width: 70%;
-        padding: 0 15px 3px 0;
-        float: right;
-        margin: 20px 0 0 0;
-        text-align: right;
+        /* width: 70%; */
+        /* padding: 0 15px 3px 0; */
+        /* float: right; */
+        /* margin: 20px 0 0 0; */
+        /* text-align: right; */
     }
     #header .slogan h1 {
-        width: auto;
-        font-size: 20px;
+        /* width: auto; */
+        font-size: 24px;
+        padding: 20px 0 15px 0;
     }
     #search {
-        float: right;
-        width: auto;
-        text-align: right;
-        padding: 0 15px 0 0;
+        /* float: right; */
+        /* width: auto; */
+        /* text-align: right; */
+        /* padding: 0 15px 0 0; */
     }
     #search .bgsearch {
-    margin-top: 3px;
+    /* margin-top: 3px; */
     }
     #search .buttonsearch {
-        float: right;
+        /* float: right; */
     }
     #menu li a {
         font-size: 14px;
@@ -323,7 +324,7 @@
     }
     #search .buttonsearch {
         position: absolute;
-        top: 0;
+        top: 1px;
         right: 0;
     }
     .datetime {
@@ -426,6 +427,10 @@
     .block-content-large .product-detail .product-content {
         overflow: inherit;
     }
+    #header .slogan h1 {
+        padding: 23px 45px;
+        font-size: 25px;
+    }
 }
 @media (max-width: 480px) {
     #search form {
@@ -439,8 +444,9 @@
         height: inherit;
     }
     #header .slogan h1 {
-        font-size: 18px;
-        padding: 0;
+        font-size: 19px;
+        padding: 10px 0;
+        font-weight: 500;
     }
     #header .slogan {
         margin: 0;
